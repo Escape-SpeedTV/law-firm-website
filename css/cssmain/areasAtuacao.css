@@ -1,0 +1,12 @@
+.area{
+    width: 100%;
+    padding: 120px 8%;
+    background: #F8F6F3;
+}
+
+.subtitulo{
+    display: block;
+    text-align: center;
+    color: #C79A5D;
+    font-size: 14px;
+}
