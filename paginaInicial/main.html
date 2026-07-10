@@ -8,28 +8,26 @@
     <link rel="stylesheet" href="/css/cssmain/areasAtuacao.css">
 </head>
 <body>
-
-    <header class="header">
-        <div class="logoEscritorio">
-            <img src="/imagens/palatucci.png" alt="Logo Palatucci Advocacia" class="logo">
-            <div class="logo-texto">
-                <h2>Palatucci Advogado</h2>
-                <div class="linha"></div>
-                <p>Advocacia Especializada</p>
-            </div>
-        </div>
-
-        <nav class="menu"> 
-            <a href="#inicio" class="ativo">Início</a> 
-            <a href="#areas">Áreas de Atuação</a>
-            <a href="#sobre">Sobre</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-
-
     <!--Aqui é o começo do site-->
-    <main class="hero">
+    <div class="inicio">
+        <header class="header">
+            <div class="logoEscritorio">
+                <img src="/imagens/palatucci.png" alt="Logo Palatucci Advocacia" class="logo">
+                <div class="logo-texto">
+                    <h2>Palatucci Advogado</h2>
+                    <div class="linha"></div>
+                    <p>Advocacia Especializada</p>
+                </div>
+            </div>
+            
+            <nav class="menu"> 
+                <a href="#inicio" class="ativo">Início</a> 
+                <a href="#areas">Áreas de Atuação</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
+        
         <div class="conteudo">
             <div class="principal">
                 <h1>
@@ -47,7 +45,7 @@
                     FALAR NO WHATSAPP 
                 </a>
             </div>
-
+    
             <div class="beneficios">
                 <div class="item">
                     <img src="/imagens/brasao.png" alt="confirmacao">
@@ -56,7 +54,7 @@
                         e transparência
                     </span>
                 </div>
-
+    
                 <div class="item">
                     <img src="/imagens/bonecos.png" alt="bonecos">
                     <span>Atuação em todo <br>
@@ -64,9 +62,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
-
-
+    <main class="hero">
         <!--Áreas de Atuaçãos-->
         <section class="area" id="areas">
             <span class="subtitulo">ÁREAS DE ATUAÇÃO</span>
@@ -94,89 +92,96 @@
                 </div>
             </div>
 
-            <div class="conteudo">
+            <div class="conteudoCards">
                 <div class="coluna">
                     <div class="cabecalho">
                         <div class="circulo">
-                            <i class="building"></i>
+                            <img src="/imagens/predios.png" alt="predio">
                         </div>
                     </div>
+                    <div>
+                        <span>ÁREA 1</span>
+                        <h2>Direito Imobiliário</h2>
+                        <p>Cuidamos do seu imóvel em cada etapa: comprar com segurança, regularizar, administrar e defender o que é seu.</p>
+                    </div>
 
-                    <span>ÁREA 1</span>
-                    <h2>Direito Imobiliário</h2>
-                    <p>Cuidamos do seu imóvel em cada etapa: comprar com segurança, regularizar, administrar e defender o que é seu.</p>
+                    <div class="servicos">
+                        <div class="servico">
+                            <img src="/imagens/an-iconic-calendar-icon-png.webp" alt="calendario">
+                            <h3>Construtora de imóveis</h3>
+                            <ul>
+                                <li>Atraso na entrega de imóveis</li>
+                                <li>Indenização por atraso</li>
+                                <li>Juros de Obra</li>
+                                <li>Danos Morais</li>
+                                <li>Rescisão contratual</li>
+                            </ul>
+                        </div>
+        
+                        <div class="servico">
+                            <img src="/imagens/0587-k1go.png" alt="posse">
+                            <h3>Posse e conflitos</h3>
+                            <ul>
+                                <li>Reintegração de posse</li>
+                                <li>Manutenção de posse</li>
+                                <li>Despejo</li>
+                            </ul>
+                        </div>
+        
+                        <div class="servico">
+                            <img src="/imagens/18591615.png" alt="banco ">
+                            <h3>Patrimônio</h3>
+                            <ul>
+                                <li>Holding Imobiliário</li>
+                                <li>Holding Familiar</li>
+                                <li>Planejamento sucessório</li>
+                                <li>Blindagem patrimonial</li>
+                            </ul>
+                        </div>
+        
+                        <div class="servico">
+                            <img src="/imagens/1451969.png" alt="adm">
+                            <h3>Administração e aluguéis</h3>
+                            <ul>
+                                <li>Gestão de contratos</li>
+                                <li>Cobrança de inadimplentes</li>
+                            </ul>
+                        </div>
+        
+                        <div class="servico">
+                            <img src="/imagens/15386154-icone-de-linha-para-regulamentacao-vetor.png" alt="regular">
+                            <h3>Regularização</h3>
+                            <ul>
+                                <li>Usucapião Judicial</li>
+                                <li>Usucapião extrajudicial</li>
+                                <li>Regularização fundiária</li>
+                                <li>Due diligência imobiliária</li>
+                            </ul>
+                        </div>
+        
+                        <div class="servico">
+                            <img src="/imagens/1333283.png" alt="carimbo">
+                            <h3>Tributo Imobiliário</h3>
+                            <ul>
+                                <li>IPTU</li>
+                                <li>ITBI</li>
+                                <li>Cobranças indevidas</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="servicos">
-                <div class="servico">
-                    <i class="calender"></i>
-                    <h3>Construtora de imóveis</h3>
-                    <ul>
-                        <li>Atraso na entrega</li>
-                        <li>Indenização</li>
-                        <li>Juros de Obra</li>
-                        <li>Danos Morais</li>
-                    </ul>
-                </div>
-
-                <div class="servico">
-                    <i class="house"></i>
-                    <h3>Posse e conflitos</h3>
-                    <ul>
-                        <li>Reintegração</li>
-                        <li>Manutenção de posse</li>
-                        <li>Despejo</li>
-                    </ul>
-                </div>
-
-                <div class="servico">
-                    <i class="bank"></i>
-                    <h3>Patrimônio</h3>
-                    <ul>
-                        <li>Holding</li>
-                        <li>Planejamento</li>
-                        <li>Partilha</li>
-                    </ul>
-                </div>
-
-                <div class="servico">
-                    <i class="build"></i>
-                    <h3>Administração</h3>
-                    <ul>
-                        <li>Contratos</li>
-                        <li>Cobranças</li>
-                    </ul>
-                </div>
-
-                <div class="servico">
-                    <i class="circle"></i>
-                    <h3>Regularização</h3>
-                    <ul>
-                        <li>Usucapião</li>
-                        <li>Inventário</li>
-                        <li>Regularização fundiária</li>
-                    </ul>
-                </div>
-
-                <div class="servico">
-                    <i class="receipt"></i>
-                    <h3>Tributo Imobiliário</h3>
-                    <ul>
-                        <li>IPTU</li>
-                        <li>ITBI</li>
-                        <li>Cobranças</li>
-                    </ul>
-                </div>
-            </div>
 
 
 
 
+
+            
             <!--Coluna do Direito Consumidor-->
             <div class="coluna">
                 <div class="cabecalho">
                     <div class="circulo">
-                        <i class="people"></i>
+                        <img src="/imagens/pessoas.png" alt="pessoa">
                     </div>
                      
                     <div>
@@ -185,10 +190,9 @@
                         <p>Se você foi cobrado a mais, negativado sem razão ou passou por um contrato abusivo, há o que fazer</p>
                     </div>
                 </div>
-
                 <div class="servicos">
                     <div class="servico">
-                        <i class="brief"></i>
+                        <img src="/imagens/2758446.png" alt="carta">
                         <h3>Ações indenizatórias</h3>
                         <ul>
                             <li>Danos morais</li>
@@ -197,7 +201,7 @@
                     </div>
 
                     <div class="servico">
-                        <i class="emark"></i>
+                        <img src="/imagens/4552675.png" alt="lupa">
                         <h3>Revisão de Contratos</h3>
                         <ul>
                             <li>Contratos bancários</li>
@@ -207,26 +211,26 @@
                     </div>
 
                     <div class="servico">
-                        <i class="cash"></i>
+                        <img src="/imagens/2091848.png" alt="juro">
                         <h3>Juros abusivos</h3>
                         <ul>
-                            <li>Revisão</li>
-                            <li>Restituição</li>
+                            <li>Revisão de Juros</li>
+                            <li>Recálculo de dívidas</li>
                         </ul>
                     </div>
 
                     <div class="servico">
-                        <i class="dollar"></i>
-                        <h3>Renegociação</h3>
+                        <img src="/imagens/pngtree-deal-line-icon-png-image_9137826.png" alt="apertomao">
+                        <h3>Renegociação de dívidas</h3>
                         <ul>
                             <li>Superendividamento</li>
-                            <li>Acordos</li>
+                            <li>Acordos de pagamento</li>
                         </ul>
                     </div>
 
                     <div class="servico">
-                        <i class="houseExcla"></i>
-                        <h3>Defesa</h3>
+                        <img src="/imagens/icon-imobiliario-1-2-29-original.png" alt="casa">
+                        <h3>Defesa em busca e apreensão</h3>
                         <ul>
                             <li>Veículos</li>
                             <li>Equipamentos financiados</li>
@@ -234,8 +238,8 @@
                     </div>
 
                     <div class="servico">
-                        <i class="triangle"></i>
-                        <h3>Negativações</h3>
+                        <img src="/imagens/exclamation-mark-icon-free-png.png" alt="exclamacao">
+                        <h3>Negativas e inscrições indevidas</h3>
                         <ul>
                             <li>SPC</li>
                             <li>Serasa</li>
@@ -244,6 +248,7 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </section>
     </main>
