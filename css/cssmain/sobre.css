@@ -5,7 +5,8 @@
 }
 
 .sobre{
-    padding: 80px 10%;
+    min-height: auto;
+    padding: 40px 10%;
     background: #f5f3f1;
 }
 .sobre-container{
@@ -16,7 +17,7 @@
 
 .sobre-imagem img{
     width: 100%;
-    max-width: 400px;
+    max-width: 800px;
     border-radius: 20px;
 }
 
@@ -33,9 +34,10 @@
 }
 
 .sobre-conteudo h2{
-    font-size: 38px;
-    margin: 20px 0;
-    line-height: 1.3;
+    font-size: 48px;
+    margin: 40px 0;
+    line-height: 1.4;
+    color: black;
 }
 
 .sobre-conteudo h2 span{
