@@ -6,7 +6,7 @@
 }
 .area{
     min-height: auto;
-    padding: 40px 15%;
+    padding: 40px 10%;
     background: #F8F6F3;
 }
 
@@ -25,19 +25,23 @@
 .cards{
     display: flex;
     justify-content: center;
-    gap: 55px;
+    gap: 40px;
     margin-bottom: 70px;
+    max-width: 1300px;
+    margin: 0 auto 70px;
 }
 
 .card-dark, .card{
-    width: 500px;
-    min-height: 210px;
+    width: 620px;
+    min-height: 200px;
     border-radius: 10px;
     padding: 40px;
     display: flex;
     align-items: center;
     gap: 35px;
     transition: .35s;
+    flex: 1;
+    
 }
 
 .card-dark{
@@ -138,14 +142,19 @@
 
 .conteudoCards{
     display: flex;
-    justify-content: space-between;
-    gap: 60px;
+    justify-content: center;
+    gap: 100px;
     margin-top: 20px;
     align-items: flex-start;
+    max-width: 1400px;
+    margin: 80px auto 0;
 }
 
 .coluna{
     flex: 1;
+    width: 100%;
+    position: relative;
+    padding-bottom: 40px;
 }
 
 .cabecalho{
@@ -153,6 +162,7 @@
     align-items: flex-start;
     gap: 22px;
     margin-bottom: 35px;
+    min-height: 140px;
 }
 
 /* .cabecalho span{
@@ -195,39 +205,48 @@
 
 .coluna h2{
     margin: 12px 0;
-    font-size: 38px;
+    font-size: 42px;
     font-weight: 500;
     color: #111;
 }
 
 .coluna p{
     color: #666;
-    line-height: 1.8;
-    font-size: 16px;
+    line-height: 1.2;
+    font-size: 18px;
     margin-bottom: 35px;
+    max-width: 390px;
 }
 
 .coluna::after{
     content: "";
     display: block;
-    width: 100%;
-    height: 1px;
-    background: #d8d8d8;
+    width: 320px;
+    height: 3px;
+    background: #C79A5D;
     margin: 35px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border-radius: 20px;
+
 }
 
 .servicos{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 22px;
+    gap: 24px;
+    margin-top: 35px;
 }
 
 .servico{
     background: #FFF; 
     border: 1px solid #E7E7E7;
-    border-radius: 16px;
-    padding: 14px;
+    border-radius: 12px;
+    padding: 20px;
     transition: .35s;
+    min-height: 185px;
 }
 
 .servico:hover{

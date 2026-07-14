@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+.sobre{
+    min-height: auto;
+    padding: 40px 10%;
+    background: #f5f3f1;
+}
+.sobre-container{
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.sobre-imagem img{
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+}
+
+.sobre-conteudo{
+    flex: 1;
+}
+
+
+.subtitulo{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #c49b63;
+    font-weight: 600;
+}
+
+.sobre-conteudo h2{
+    font-size: 48px;
+    margin: 40px 0;
+    line-height: 1.4;
+    color: black;
+}
+
+.sobre-conteudo h2 span{
+    color: #c49b63;
+}
+
+.sobre-conteudo p{
+    color: #444;
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.diferenciais-titulo{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.diferenciais{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+.box{
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+    width: 160px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.box img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.box p{
+    font-size: 13px;
+}
+
+.cta {
+    margin-top: 30px;
+    background: #e9e3dc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cta p{
+    margin-bottom: 10px;
+}
+
+.botao{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    background: black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.botao img{
+    width: 20px;
+}
+
+.botao:hover{
+    background: #333;
+}
+
+@media (max-width: 900px){
+    .sobre-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-imagem img{
+        max-width: 100%;
+    }
+
+    .diferenciais{
+        justify-content: center;
+    }
+}
