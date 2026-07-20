@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="/css/cssmain/menu.css">
     <link rel="stylesheet" href="/css/cssmain/areasAtuacao.css">
     <link rel="stylesheet" href="/css/cssmain/sobre.css">
+    <link rel="stylesheet" href="/css/cssmain/formulario.css">
+    <link rel="stylesheet" href="/css/cssmain/footer.css">
 </head>
 <body>
     <!--Aqui é o começo do site-->
     <div class="inicio">
-        <header class="header">
-            <div class="logoEscritorio">
-                <img src="/imagens/palatucci.png" alt="Logo Palatucci Advocacia" class="logo">
-                <div class="logo-texto">
-                    <h2>Palatucci Advogado</h2>
-                    <div class="linha"></div>
-                    <p>Advocacia Especializada</p>
+        <section class="in2" id="in2">
+            <header class="header">
+                <div class="logoEscritorio">
+                    <img src="/imagens/palatucci.png" alt="Logo Palatucci Advocacia" class="logo">
+                    <div class="logo-texto">
+                        <h2>Palatucci Advogado</h2>
+                        <div class="linha"></div>
+                        <p>Advocacia Especializada</p>
+                    </div>
                 </div>
-            </div>
-            
-            <nav class="menu"> 
-                <a href="#inicio" class="ativo">Início</a> 
-                <a href="#areas">Áreas de Atuação</a>
-                <a href="#sobre">Sobre</a>
-                <a href="#contato">Contato</a>
-            </nav>
-        </header>
+                
+                <nav class="menu"> 
+                    <a href="#in2" class="ativo">Início</a> 
+                    <a href="#areas">Áreas de Atuação</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#contato">Contato</a>
+                </nav>
+            </header>
+        </section>
         
         <div class="conteudo">
             <div class="principal">
@@ -323,17 +327,230 @@
 
 
 
-        <section id="contato" class="contato">
-            <span class="subtitulo-contato">
-                FORMULÁRIO INTELIGENTE
-            </span>
 
+        <section class="contato" id="contato">
+            <span class="subtitulo-contato">FORMULÁRIO INTELIGENTE</span>
             <h2>Fale com um especialista</h2>
-            <p class="texto-contato">
-                Receba atendimento jurídico personalizado em poucos minutos
-            </p>
+            <p class="texto-contato">Receba atendimento jurídico personalizado em poucos minutos.</p>
+
+            <div class="formulario">
+                <div class="passo">
+
+                    <!--Aqui é a parte que o cliente escolhe qual é o seu problema-->
+
+                    <span class="numero-passo">PASSO 1</span>
+                    <h3>Qual área deseja atendimento?</h3>
+                    <p>Selecione uma opção</p>
+
+                    <div class="areas">
+                        <div class="opcao-area" id="area-imobiliario">
+                            <img src="/imagens/predio1.png" alt="">
+                            <span>Direito Imobiliário</span>
+                        </div>
+
+
+                        <div class="opcao-area" id="area-consumidor">
+                            <img src="/imagens/bonecos.png" alt="">
+                            <span>Direito do Consumidor</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="seta"></div>
+
+
+                <div class="passo">
+                    <span class="numero-passo">PASSO 2 </span>
+                    <h3 id="tituloProblema">Qual o problema?</h3>
+                    <p>Selecione uma opção</p>
+
+                    <!-- Finalizar com o JavaScript William!!! -->
+                    <div id="listaProblemas"></div>
+                </div>
+
+
+                <div class="seta"></div>
+
+
+                <div class="passo">
+                    <span class="numero-passo">PASSO 3</span>
+                    <h3>Suas informações</h3>
+
+                    <input type="text" id="nome" placeholder="Nome Completo">
+
+                    <label for="telefone">Telefone (WhatsApp)</label>
+
+                    <div class="linha-inputs">
+                        <input type="text" id="telefone" placeholder="(61) 99999-9999">
+                        <input type="text" id="celular" placeholder="(61) 3214-5678">
+                    </div>
+
+                    <label for="descricao">Informe seu problema</label>
+                    <textarea id="descricao" placeholder="Descreva seu problema."></textarea>
+                </div>
+
+
+                <div class="passo pronto">
+                    <span class="numero-passo">PRONTO!</span>
+
+                    <img src="/imagens/whatsapp-logo-png_seeklogo-168310.png" alt="Whatsapp">
+                    <p>Vamos enviar suas informações diretamente para o advogado.</p>
+
+                    <button id="btnEnviar">ENVIAR PARA WHATSAPP</button>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="canais">
+                <div class="titulo-canais">
+                    <div class="linha"></div>
+
+                    <h3>Nossos <span>Canais</span> de Contato</h3>
+
+                    <div class="linha"></div>
+                </div>
+
+                <h2 class="titulo-atendimento">Estamos prontos para <span>te atender</span></h2>
+                
+                <p class="texto-canais">Escolha o canal que for mais conveniente e fale diretamente com nossa equipe.
+                    <br> Atendimento rápido, prático e seguro.
+                </p>
+
+                <div class="cards-contato">
+                    <div class="card-contato">
+                        <div class="icone">
+                            <img src="/imagens/tell branco.png" alt="telefone">
+                        </div>
+                        <h3>Telefone</h3>
+                        <p>Segunda a Sexta, <br>das 8h às 18h</p>
+                        <div class="traco"></div>
+                        <span>Indisponível</span>
+                    </div>
+
+                    <div class="card-contato">
+                        <div class="icone">
+                            <img src="/imagens/whatsapp-logo-png_seeklogo-168310.png" alt="WhatsApp">
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Atendimento rápido <br>e seguro</p>
+                        <div class="traco"></div>
+                        <strong>(61) 99914-4509</strong>
+                        <a href="https://web.whatsapp.com/send?phone=5561992259321">ABRIR CONVERSA →</a>
+                    </div>
+
+                    <div class="card-contato">
+                        <div class="icone">
+                            <img src="/imagens/email.png" alt="email">
+                        </div>
+                        <h3>E-mail</h3>
+                        <p>Envie documentos e <br>negocie suas pendências.</p>
+                        <div class="traco"></div>
+                        <strong>palatucci@advfdf.com.br</strong>
+                        <a href="mailto:palatucci@advfdf.com.br">ENVIAR E-MAIL →</a>
+                    </div>
+
+                    <div class="card-contato">
+                        <div class="icone">
+                            <img src="/imagens/Camada 1.png" alt="Instagram">
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>Acompanhe o conteúdo <br>e novidades.</p>
+                        <div class="traco"></div>
+                        <span>Indisponível</span>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
 
-    <footer></footer> <!--Aqui vai ser o final da pagina-->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="footer-logo-area">
+                    <img src="/imagens/palatucci.png" alt="Palatucci Advogado " class="footer-logo">
+                    <div class="footer-logo-texto">
+                        <h2>Palatucci Advogado</h2>
+                        <div class="linha-logo"></div>
+                        <span>ADVOCACIA ESPECIALIZADA</span>
+                    </div>
+                </div>
+                <p class="footer-descricao">
+                    Soluções jurídicas personalizadas com ética, transparência e compromisso com resultados.
+                </p>
+
+                <div class="footer-redes">
+                    <a href="https://web.whatsapp.com/send?phone=5561992259321">
+                        <img src="/imagens/whatsapp-logo-png_seeklogo-168310.png" alt="">
+                    </a>
+
+                    <a href="#">
+                        <img src="/imagens/Camada 1.png" alt="">
+                    </a>
+
+                    <a href="mailto:palatucci@advfdf.com.br">
+                        <img src="/imagens/email.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>NAVEGAÇÃO</h3>
+                <ul>
+                    <li><a href="#in2">Inicio</a></li>
+                    <li><a href="#areas">Areas de Atuação</a></li>
+                    <li><a href="#sobre">Sobre o Escritório</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>CONTATO</h3>
+                <ul class="lista-contato">
+                    <li>
+                        <img src="/imagens/tell branco.png" alt="">
+                        (61) 99914-4509
+                    </li>
+                    <li>
+                        <img src="/imagens/whatsapp-logo-png_seeklogo-168310.png" alt="">
+                        (61) 99914-4509
+                    </li>
+                    <li>
+                        <img src="/imagens/email.png" alt="">
+                        palatucci@advdf.com.br
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-direita">
+                <img src="/imagens/balanca.png" alt="" class="icone-balanca">
+                <p>Atendimento humanizado<br> e focado em resultados.</p>
+                <a href="https://web.whatsapp.com/send?phone=5561999144509"
+                    class="botao-footer">
+                    <img src="/imagens/whatsapp-logo-png_seeklogo-168310.png" alt=""> Falar no WhatsApp
+                    <span>→</span>
+                </a>
+            </div>
+        </div>
+
+            <div class="footer-info">
+                <img src="/imagens/brasao.png" alt="seguranca">
+                <p>Seus dados estão seguros. Atendimento humanizado e sigiloso.</p>
+            </div>
+
+            <div class="footer-copy">
+                © 2026 Palatucci & Advogado. Todos os direitos reservados.
+            </div>
+    </footer> <!--Aqui vai ser o final da pagina-->
 </html>
