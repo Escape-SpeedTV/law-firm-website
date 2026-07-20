@@ -44,7 +44,7 @@
 }
 
 .passo{
-    width: 340px;
+    width: 300px;
     min-height: 470px;
     height: 420px;
     border: 1px solid #9a7346;
@@ -153,21 +153,26 @@
 #listaProblemas{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 18px;
+    margin-top: 20px;
 }
 
 #listaProblemas label{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     cursor: pointer;
     color: #efefef;
     font-size: 15px;
+    line-height: 1;
+    margin: 0;
 }
 
 #listaProblemas input{
     width: 18px;
     height: 18px;
+    margin: 0;
+    flex-shrink: 0;
 }
 
 .passo textarea{
@@ -317,7 +322,7 @@
     color: #C79A5D;
 }
 
-.linha{
+.linha2{
     width: 40px;
     height: 2px;
     background: #C79A5D;
@@ -339,7 +344,7 @@
 
 .texto-canais{
     max-width: 760px;
-    margin: 0 auto 70px;
+    margin: 0 auto 40px;
     text-align: center;
     color: #D5D5D5;
     font-size: 18px;
@@ -452,7 +457,7 @@
         gap:15px;
     }
 
-    .linha{
+    .linha2{
         width:50px;
     }
 
@@ -474,4 +479,28 @@
         max-width:420px;
 
     }
+}
+
+
+.opcao-area.ativa{
+    background: rgba(199, 154, 93, .12);
+    border: 2px solid #C79A5D;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(199, 154, 93, .18);
+}
+
+.opcao-area.ativa img{
+    transform: scale(1.08);
+}
+
+.opcao-area.ativa span{
+    color: #fff;
+}
+
+.opcao-area img{
+    transition: .3s;
+}
+
+.opcao-area{
+    transition: .3s;
 }
