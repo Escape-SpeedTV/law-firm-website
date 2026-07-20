@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contato{
+    background: #111418;
+    padding: 50px 0%;
+    color: #FFF;
+}
+
+.subtitulo-contato{
+    display: block;
+    text-align: center;
+    color: #C79A5D;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.contato h2{
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.texto-contato{
+    text-align: center;
+    color: #d6d6d6;
+    margin-bottom: 55px;
+    line-height: 1.6;
+    font-size: 20px;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.passo{
+    width: 340px;
+    min-height: 470px;
+    height: 420px;
+    border: 1px solid #9a7346;
+    border-radius: 15px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.numero-passo{
+    color: #C79A5D;
+    font-size: 15px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: .1px;
+}
+
+.passo h3{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    margin-top: 4px;
+    color: #fff;
+    font-family:Georgia,serif;
+}
+
+.passo-formulario input:first-of-type{
+    margin-bottom:18px;
+}
+
+.passo:nth-child(5){
+
+    width:360px;
+
+}
+.passo label{
+    display: flex;
+    margin-bottom: 18px;
+    color: #fff;
+    font-size: 13px;
+}
+
+.passo-formulario label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #fff;
+    width: 100%;
+    margin: 12px 0 8px;
+}
+
+
+
+.passo p{
+    color: #cfcfcf;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* .seta{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #C79A5D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #FFF;
+    margin-top: 170px;
+} */
+
+.areas{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.opcao-area{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    border: 1px solid #9a7346;
+    border-radius: 10px;
+    padding: 28px;
+    cursor: pointer;
+    transition: .35s;
+}
+
+.opcao-area:hover{
+    background: #1a2026;
+    transform: translateY(-4px);
+}
+
+.opcao-area img{
+    width: 62px;
+}
+
+.opcao-area span{
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+}
+
+#listaProblemas{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#listaProblemas label{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #efefef;
+    font-size: 15px;
+}
+
+#listaProblemas input{
+    width: 18px;
+    height: 18px;
+}
+
+.passo textarea{
+    width: 100%;
+    height: 126px;
+    border: none;
+    border-radius: 6px;
+    resize: none;
+    padding: 14px;
+    font-size: 15px;
+    font-family: inherit;
+    flex: 1;
+    min-height: 150px;
+}
+
+.passo textarea::placeholder{
+    color: #BDBDBD;
+}
+
+.passo input{
+    width: 100%;
+    height: 42px;
+    border: none;
+    border-radius: 6px;
+    padding: 0 14px;
+    margin-bottom: 12px;
+    background: #FFF;
+    font-size: 15px;
+}
+
+.passo input::placeholder{
+    color: #BDBDBD;
+}
+
+
+.linha-inputs{
+    display: flex;
+    gap: 10px;
+}
+
+.linha-inputs input{
+    flex: 1;
+    margin-bottom: 14px;
+}
+
+.pronto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pronto img{
+    width: 95px;
+    margin: 25px 0;
+}
+
+.pronto p{
+    max-width: 200px;
+    line-height: 1.8;
+}
+
+.pronto button{
+    margin-top: auto;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.pronto button:hover{
+    background: #C79A5D;
+}
+
+@media(max-width:1400px){
+
+    .formulario{
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .seta{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    .passo{
+
+        width:100%;
+
+    }
+
+    .linha-inputs{
+
+        flex-direction:column;
+
+    }
+
+    .contato h2{
+
+        font-size:38px;
+
+    }
+
+}
+
+
+
+
+.canais{
+    margin-top: 80px;
+    width: 100%;
+}
+
+
+.titulo-canais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+.titulo-canais h3{
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: #FFF;
+    white-space: nowrap;
+}
+
+.titulo-canais h3 span{
+    color: #C79A5D;
+}
+
+.linha{
+    width: 40px;
+    height: 2px;
+    background: #C79A5D;
+}
+
+.titulo-atendimento{
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 62px;
+    font-weight: 400;
+    color: #FFF;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.titulo-atendimento span{
+    color: #C79A5D;
+}
+
+.texto-canais{
+    max-width: 760px;
+    margin: 0 auto 70px;
+    text-align: center;
+    color: #D5D5D5;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.cards-contato{
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.card-contato{
+    width: 295px;
+    min-height: 380px;
+    border: 1px solid rgba(255,255,255,.20);
+    border-radius: 12px;
+    padding: 38px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: .35s;
+}
+
+.card-contato:hover{
+    transform: translateY(-8px);
+    border-color: #C79A5D;
+    box-shadow: 0 18px 35px rgba(0,0,0,.18);
+}
+
+.card-contato img{
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+    margin-bottom: 30px;
+    margin: 0;
+}
+
+.card-contato .icone{
+    width: 78px;
+    height: 78px;
+    border: 1px solid rgba(255,255,255,.85);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+    transition: .35s;
+}
+
+
+
+
+.card-contato h3{
+    font-family: Georgia, serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: #FFF;
+    margin-bottom: 18px;
+}
+
+.card-contato p{
+    color: #D6D6D6;
+    font-size: 17px;
+    line-height: 1.7;
+    min-height: 70px;
+}
+
+.traco{
+    width: 28px;
+    height: 2px;
+    background: #FFF;
+    margin: 0px auto;
+}
+
+.card-contato strong,
+.card-contato span{
+    font-size: 21px;
+    font-weight: 500;
+    color: #FFF;
+    margin: 40px;
+}
+
+.card-contato a{
+    margin-top: auto;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: .8px;
+    transition: .3s;
+}
+
+.card-contato a:hover{
+    color: #C79A5D;
+}
+
+@media(max-width:1200px){
+    .cards-contato{
+        gap:20px;
+    }
+
+}
+
+@media(max-width:768px){
+    .titulo-canais{
+        flex-direction: column;
+        gap:15px;
+    }
+
+    .linha{
+        width:50px;
+    }
+
+    .titulo-atendimento{
+        font-size:42px;
+    }
+
+    .texto-canais{
+        font-size:16px;
+    }
+
+    .cards-contato{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card-contato{
+        width:100%;
+        max-width:420px;
+
+    }
+}
