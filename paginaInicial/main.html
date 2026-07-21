@@ -338,7 +338,7 @@
 
                     <!--Aqui é a parte que o cliente escolhe qual é o seu problema-->
 
-                    <span class="numero-passo">PASSO 1</span>
+                    <span class="numero-passo" id="passo1">PASSO 1</span>
                     <h3>Qual área deseja atendimento?</h3>
                     <p>Selecione uma opção</p>
 
@@ -360,7 +360,7 @@
                 <div class="seta"></div>
 
 
-                <div class="passo">
+                <div class="passo" id="passo2">
                     <span class="numero-passo">PASSO 2 </span>
                     <h3 id="tituloProblema">Qual o problema?</h3>
                     <p>Selecione uma opção</p>
@@ -373,7 +373,7 @@
                 <div class="seta"></div>
 
 
-                <div class="passo">
+                <div class="passo" id="passo3">
                     <span class="numero-passo">PASSO 3</span>
                     <h3>Suas informações</h3>
 
@@ -388,10 +388,12 @@
 
                     <label for="descricao">Informe seu problema</label>
                     <textarea id="descricao" placeholder="Descreva seu problema."></textarea>
+
+                    <button id="continuar">Continuar</button>
                 </div>
 
 
-                <div class="passo pronto">
+                <div class="passo pronto" id="passo4">
                     <span class="numero-passo">PRONTO!</span>
 
                     <img src="/imagens/whatsapp-logo-png_seeklogo-168310.png" alt="Whatsapp">
