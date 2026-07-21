@@ -45,7 +45,7 @@ Atendimento em situações envolvendo cobranças indevidas, contratos abusivos, 
 
 ### Ferramentas
 
-- Figma (prototipação e design)
+- Figma (prototipação e design) 🔗 Figma: https://www.figma.com/design/4vxVJsNMKIMjy05fqypVsQ/Sem-t%C3%ADtulo?node-id=1-2&t=09uyMPxexlUv3KPl-1
 - Git e GitHub (versionamento)
 
 ---
@@ -83,7 +83,7 @@ O layout foi desenvolvido seguindo uma identidade visual moderna para o segmento
 ---
 
 ## 📸 Preview
-
+(./imagens/preview.png)
 
 ---
 
