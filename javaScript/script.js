@@ -6,11 +6,62 @@ const opcaoArea = document.querySelectorAll(".opcao-area");
 // Local onde serão colocados os problemas
 const listaProblemas = document.getElementById("listaProblemas");
 
+const passo1 = document.getElementById("passo1")
+const passo2 = document.getElementById("passo2")
+const passo3 = document.getElementById("passo3")
+const passo4 = document.getElementById("passo4")
+
+//Nesse trecho eu meio que estou alterando o css! No meu css ficou: "Display:Flex", aqui, para colocar uma excessão, eu estou mudando o display flex, para display none.
+passo2.style.display = "none";
+passo3.style.display = "none";
+passo4.style.display = "none";
+
+//Aqui é aba de informar o telefone, descrição e nome.
 const botaoEnviar = document.getElementById("btnEnviar");
 const nome = document.getElementById("nome");
 const telefone = document.getElementById("telefone");
 const celular = document.getElementById("celular");
 const descricao = document.getElementById("descricao");
+const botaoContinuar = document.getElementById("continuar");
+botaoContinuar.disabled = true;
+
+function mascaraTelefone(input){
+    let valor = input.value.replace(/\D/g, "");
+    valor = valor.slice(0,11);
+
+    if(valor.length > 2){
+        valor = "(" + valor.slice(0,2) + ") " + valor.slice(2);
+    }
+
+    if(valor.length > 10){
+        valor = valor.slice(0,10) + "-" + valor.slice(10);
+    }
+    input.value = valor;
+}
+
+telefone.addEventListener("input", function(){
+    mascaraTelefone(telefone);
+});
+
+celular.addEventListener("input", function(){
+    mascaraTelefone(celular);
+})
+
+botaoContinuar.addEventListener("click", function(){
+    if(nome.value == ""){
+        alert("Informe seu nome.");
+        return;
+    } else if(telefone.value == ""){
+        alert("Informe seu telefone");
+        return;
+    } else if(descricao.value == ""){
+        alert("Informe uma descrição");
+        return;
+    }
+
+    passo4.style.display = "flex";
+
+})
 
 botaoEnviar.addEventListener("click", function(){
 
@@ -46,11 +97,39 @@ botaoEnviar.addEventListener("click", function(){
 
     const texto = encodeURIComponent(mensagem);
 
+    passo4.style.display = "flex";
+    
     window.open(
         `https://wa.me/5561992259321?text=${texto}`,
         "_blank"
     );
 
+    //Aqui, após a pessoa enviar para o wpp, ele vai limpar os valores declarados.
+    nome.value = "";
+    telefone.value = "";
+    celular.value = "";
+    descricao.value = "";
+
+    //Aqui, ele vai remover o problema selecionado pelo o usuário.
+    document.querySelectorAll('input[name="problema"]').forEach(function(radio){
+        radio.checked = false;
+    });
+
+    //Aqui, vamos limpar a lista de problemas
+    listaProblemas.innerHTML = "";
+
+    //Aqui, vamos remover o destaque da área
+    opcaoArea.forEach(function(opcao){
+        opcao.classList.remove("selecionada");
+    });
+
+    //Nesse trecho, será limpo as variáveis
+    areaSelecionada = "";
+
+    passo4.style.display = "none";
+    passo1.style.display = "none";
+    passo2.style.display = "none";
+    passo3.style.display = "none";
 });
 
 
@@ -112,5 +191,29 @@ opcaoArea.forEach(function(opcao){
 
         //Aqui ele vai selecionar o problema
         mostrarProblemas(area);
+
+        passo1.style.display = "none";
+
+        //Aqui, eu estou fazendo com que o código apareça no display.
+        passo2.style.display = "flex";
+
+        listaProblemas.addEventListener("change", function(){
+            passo3.style.display = "flex";
+        })
     });
 });
+
+function verificarFormulario(){
+    if(nome.value.trim() != "" && telefone.value.trim() != "" && descricao.value.trim() != ""){
+        botaoContinuar.disabled = false;
+        botaoContinuar.classList.add("ativo");
+    }else{
+        botaoContinuar.disabled = true;
+        botaoContinuar.classList.remove("ativo");
+    }
+}
+
+nome.addEventListener("input", verificarFormulario);
+telefone.addEventListener("input", verificarFormulario);
+celular.addEventListener("input", verificarFormulario);
+descricao.addEventListener("input", verificarFormulario);
