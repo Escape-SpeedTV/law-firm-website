@@ -84,7 +84,7 @@ O layout foi desenvolvido seguindo uma identidade visual moderna para o segmento
 
 ## 📸 Preview
 (./imagens/preview.png)
-
+[<img src="./imagens/preview.png" width="250"/>](./imagens/preview.png)
 ---
 
 ## 👨‍💻 Desenvolvedor
