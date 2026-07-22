@@ -6,6 +6,8 @@ const opcaoArea = document.querySelectorAll(".opcao-area");
 // Local onde serão colocados os problemas
 const listaProblemas = document.getElementById("listaProblemas");
 
+const header = document.getElementById("header");
+
 const passo1 = document.getElementById("passo1")
 const passo2 = document.getElementById("passo2")
 const passo3 = document.getElementById("passo3")
@@ -217,3 +219,18 @@ nome.addEventListener("input", verificarFormulario);
 telefone.addEventListener("input", verificarFormulario);
 celular.addEventListener("input", verificarFormulario);
 descricao.addEventListener("input", verificarFormulario);
+
+window.addEventListener("scroll", function(){
+    if(window.scrollY > 350){
+        header.classList.add("fixo");
+    }else{
+        header.classList.remove("fixo");
+    }
+});
+
+const menuMobile = document.getElementById("menuMobile");
+const menu = document.querySelector(".menu");
+
+menuMobile.addEventListener("click", function(){
+    menu.classList.toggle("ativo");
+})
