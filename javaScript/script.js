@@ -233,4 +233,18 @@ const menu = document.querySelector(".menu");
 
 menuMobile.addEventListener("click", function(){
     menu.classList.toggle("ativo");
+
+    if(menu.classList.contains("ativo")){
+        menuMobile.innerHTML = "X";
+    }else{
+        menuMobile.innerHTML = "☰";
+    }
 })
+
+const linksMenu = document.querySelectorAll(".menu a");
+linksMenu.forEach(function(link){
+    link.addEventListener("click", function(){
+        menu.classList.remove("ativo");
+        menuMobile.innerHTML = "☰";
+    });
+});
