@@ -22,7 +22,7 @@
 .sobre-imagem img{
     width:100%;
     max-width:620px;
-    height: auto;
+    height: 920px;
     object-fit: cover;
     border-radius:18px;
     display:block;
@@ -69,7 +69,7 @@
     max-width:820px;
 }
 
-@media(max-width:1000px){
+/* @media(max-width:1000px){
     .sobre{
         flex-direction:column;
         text-align:center;
@@ -87,7 +87,7 @@
         max-width:100%;
     }
 
-}
+} */
 
 .titulos-diferenciais{
     margin-top: 55px;
@@ -189,7 +189,7 @@
     background: #C79A5D;
 }
 
-@media(max-width:1100px){
+/* @media(max-width:1100px){
 
     .sobre{
 
@@ -220,4 +220,4 @@
 
     }
 
-}
+} */

@@ -252,49 +252,6 @@
     background: #C79A5D;
 }
 
-@media(max-width:1400px){
-
-    .formulario{
-
-        flex-wrap:wrap;
-
-        justify-content:center;
-
-    }
-
-    .seta{
-
-        display:none;
-
-    }
-
-}
-
-@media(max-width:700px){
-
-    .passo{
-
-        width:100%;
-
-    }
-
-    .linha-inputs{
-
-        flex-direction:column;
-
-    }
-
-    .contato h2{
-
-        font-size:38px;
-
-    }
-
-}
-
-
-
-
 .canais{
     margin-top: 80px;
     width: 100%;
@@ -443,44 +400,6 @@
 .card-contato a:hover{
     color: #C79A5D;
 }
-
-@media(max-width:1200px){
-    .cards-contato{
-        gap:20px;
-    }
-
-}
-
-@media(max-width:768px){
-    .titulo-canais{
-        flex-direction: column;
-        gap:15px;
-    }
-
-    .linha2{
-        width:50px;
-    }
-
-    .titulo-atendimento{
-        font-size:42px;
-    }
-
-    .texto-canais{
-        font-size:16px;
-    }
-
-    .cards-contato{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .card-contato{
-        width:100%;
-        max-width:420px;
-
-    }
-}
-
 
 .opcao-area.ativa{
     background: rgba(199, 154, 93, .12);

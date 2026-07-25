@@ -1,0 +1,84 @@
+@media (max-width:768px){
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .passo{
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        min-height: auto;
+    }
+    
+    .passo h3{
+        font-size: 26px;
+    }
+
+    .passo p{
+        font-size: 16px;
+    }
+
+    .passo input, .passo textarea{
+        font-size: 16px;
+    }
+
+    .linha-inputs{
+        flex-direction: column;
+    }
+
+    #continuar{
+        height: 52px;
+        margin-top: 20px;
+    }
+
+    .cards-contato{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        width: 100%;
+        padding: 0 12px;
+    }
+
+    .card-contato{
+        width: 100%;
+        min-width: 0px;
+        padding: 18px 12px;
+        min-height: 220px;
+    }
+
+    .card-contato h3{
+        font-size: 18px;
+    }
+
+    .card-contato p{
+        font-size: 13px;
+        min-height: 1.5;
+    }
+
+    .card-contato strong, .card-contato span{
+        font-size: 14px;
+        margin: 18px 0;
+    }
+
+    .card-contato .icone{
+        width: 60px;
+        height: 60px;
+    }
+
+    .card-contato img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .card-contato a{
+        font-size: 13px;
+    }
+
+    .card-contato strong, .card-contato span, .card-contato p, .card-contato a{
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+}
