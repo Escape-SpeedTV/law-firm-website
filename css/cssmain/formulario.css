@@ -316,7 +316,7 @@
 }
 
 .card-contato{
-    width: 295px;
+    width: 290px;
     min-height: 380px;
     border: 1px solid rgba(255,255,255,.20);
     border-radius: 12px;
@@ -381,7 +381,7 @@
 
 .card-contato strong,
 .card-contato span{
-    font-size: 21px;
+    font-size: 18px;
     font-weight: 500;
     color: #FFF;
     margin: 40px;

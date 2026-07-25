@@ -88,10 +88,10 @@ botaoEnviar.addEventListener("click", function(){
     Problema:
     ${problemaSelecionado.value}
 
-    Telefone:
+    Celular:
     ${telefone.value}
 
-    Celular:
+    Telefone:
     ${celular.value}
 
     Descrição:
@@ -102,7 +102,7 @@ botaoEnviar.addEventListener("click", function(){
     passo4.style.display = "flex";
     
     window.open(
-        `https://wa.me/5561992259321?text=${texto}`,
+        `https://wa.me/5561999154509?text=${texto}`,
         "_blank"
     );
 
