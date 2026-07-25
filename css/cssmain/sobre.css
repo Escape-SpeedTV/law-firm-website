@@ -8,7 +8,7 @@
     width: 100%;
     max-width:1700px;
     margin:120px auto;
-    padding:0 5%;
+    padding:2px 1%;
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -111,7 +111,7 @@
 .diferenciais{
     display: flex;
     grid-template-columns: repeat(5,1fr);
-    gap: 18px;
+    gap: 10px;
     margin-bottom: 35px;
 
 }
@@ -119,12 +119,12 @@
 .diferencial{
     border: 1px solid #d8d8d8;
     border-radius: 8px;
-    padding: 28px 18px;
+    padding: 28px 2px;
     text-align: center;
     transition: .3s;
     background: #fff;
     width: 170px;
-    height: 180px;
+    height: 210px;
 
 }
 
